@@ -2,10 +2,9 @@ package com.example.marcelo.tilapp;
 
 import android.animation.Animator;
 import android.content.Intent;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.design.widget.TextInputLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewAnimationUtils;
@@ -45,10 +44,11 @@ public class MainActivity extends AppCompatActivity {
             tilUsuario.setError(null);
             tilPassword.setError(null);
 
-            revealView();
+            //revealView();
 
             Intent intent = new Intent(getApplicationContext(), SegundaActivity.class);
-            startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
+
+            startActivity(intent);
         }
 
     }
